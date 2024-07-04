@@ -24,6 +24,7 @@ test('compare :: less than', t => {
 	t.semiver('1.9.0', '1.9.1', -1);
 	t.semiver('1.0.0', '10.0.0', -1);
 	t.semiver('8.9.0', '10.0.0', -1);
+	t.semiver('1.0.0', '1.0.0-a', -1);
 	t.semiver('1.2.3-next.6', '1.2.3-next.10', -1);
 	t.semiver('2.0.0-alpha-6', '2.0.0-alpha-10', -1);
 	t.semiver('2.0.0-alpha.8', '2.0.0-beta.1', -1);
